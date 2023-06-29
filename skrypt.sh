@@ -46,6 +46,7 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
 	echo "--logs/-l (liczba)"
 	echo "--error/-e (liczba)"
 	echo "--date/-d"
+	echo "--init/-i"
 else 
 	echo "Nie prawidłowa opcja, wpisz --help/-h"
 fi
