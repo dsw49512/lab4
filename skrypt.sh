@@ -18,3 +18,10 @@ if [[ "$1" == "--logs" ]]; then
     echo "Data: $(date)" >> "$filename"
   done
 fi
+if [[ "$1" == "--help" ]]; then
+	echo "Wybierz funkcje"
+	echo "--logs (liczba)"
+	echo "--date"
+else 
+	echo "Nie prawidłowa opcja, wpisz --help"
+fi
