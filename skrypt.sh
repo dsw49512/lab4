@@ -18,6 +18,12 @@ if [[ "$1" == "--logs" || "$1" == "-l" ]]; then
     echo "Data: $(date)" >> "$filename"
   done
 fi
+if [[ "$1" == "--init" || "$1" == "-i" ]]; then
+	git clone https://github.com/dsw49512/lab4
+	export PATH = "$PWD:$PATH"
+	 echo "Repozytorium jest sklonowane do bieżącego katalogu."
+    echo "Ścieżka do repozytorium jest dodana. Jest w zmiennej środowiskowej PATH."
+fi
 if [[ "$1" == "--help" || "$1" == "-h" ]]; then
 	echo "Wybierz funkcje"
 	echo "--logs/-l (liczba)"
